@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('imagens/ceu-noturno-escuro-com-estrelas-brilhantes-para-o-fundo_491799-3987.avif');
+    color: white;
+    text-align: center;
+  }
+  
+  /* Título */
+  h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+  }
+  
+/* Links */
+.link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    z-index: 1;
+    display: block; 
+    text-align: center;
+    padding: 10px; 
+    margin-bottom: 1000px; 
+  }
+  /*"Mercúrio" */
+.link[href="mercurio.html"]::before {
+    content: '';
+    display: inline-block; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px; /* Tamanho do círculo */
+    height: 100px; /* Tamanho do círculo */
+    background-color: gray; /* Cor cinza do círculo */
+    border-radius: 50%;
+    z-index: -1;
+  }
+  .link[href="mercurio.html"]:hover {
+    color: grey;
+  }
+  /*Sol*/
+  .link[href="sol.html"]::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 50%;
+    z-index: -1;
+  }
+/*SOL*/
+.link[href="sol.html"] {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    z-index: 1;
+    display: inline-block; 
+    text-align: center;
+    padding: 10px; 
+  }
+  
+  .link[href="sol.html"]::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .link:hover {
+    color: orange;
+  }
+  
